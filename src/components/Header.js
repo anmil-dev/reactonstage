@@ -7,17 +7,22 @@ import {
     Nav,
     NavItem
 } from 'reactstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faMicrophoneLines } from '@fortawesome/free-solid-svg-icons';
+// import {fa-microphone-lines} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 // import UserLoginForm from '../features/user/UserLoginForm';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='md'>
+        <Navbar dark color='dark' sticky='top' expand='md'>
                 <NavbarBrand href='/'>
-                    <h1>ONSTAGE. A Better Live Experience</h1>
+                <a> <FontAwesomeIcon icon={faMicrophoneLines} /> onStage. </a>
                 </NavbarBrand>
+
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
                 <Collapse isOpen={menuOpen} navbar>
                     <Nav className='ms-auto' navbar>
