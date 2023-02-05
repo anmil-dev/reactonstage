@@ -13,25 +13,28 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faMicrophoneLines } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import UserLoginForm from '../features/user/UserLoginForm';
-import '../App.css' 
-import styles from '../mystyles.module.css'
+import '../index.css';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     
     return (
-        <Navbar fixed='top' expand='xxl' id='nav' className={styles.navbar}>
-                <NavbarBrand href='/' style={{fontSize: 45}}>
-                <FontAwesomeIcon icon={faMicrophoneLines} /> onStage.
+        <>
+        <div className='header'></div>
+        <Navbar className='navbar d-flex me-5' fixed='top' expand='xxl' id='nav'>
+                <NavbarBrand id='logo' href='/'>
+                    <FontAwesomeIcon icon={faMicrophoneLines} /> onStage.
                 </NavbarBrand>
-            <h2>a <strong>better</strong> live experience</h2>
-            <Button size='lg' outline className='ms-1'
+                <div className='col d-lg-block pe-5'>
+                    <h2>a <strong>better</strong> live experience</h2>
+                </div>
+            <Button className='btn btn-dark btn-lg text-nowrap me-5'
                 style={{backgroundColor: "black", color: "white"}}>
-                Buy TICKETS
+                BUY TICKETS
             </Button>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} className='ms-2 me-5' />
                 <Collapse isOpen={menuOpen} navbar>
-                    <Nav className='ms-auto' navbar>
+                    <Nav className='ms-auto p-2 flex-shrink-2 ' navbar>
                         <NavItem>
                             <NavLink className='nav-link' to=''>
                                 EVENT CALENDAR
@@ -60,8 +63,9 @@ const Header = () => {
                     </Nav>
                     
                 </Collapse>
-                <UserLoginForm />
+                <UserLoginForm className=' ms-2 me-5' />
         </Navbar>
+        </>
     );
 };
 

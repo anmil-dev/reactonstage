@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header{
+    height: 140px;
+    background-color: rgb(255, 255, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    height: 140px;
+    background-color: rgba(244, 250, 250, 0.241);
+    opacity: 90%;
+}
+
+.nav-link {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+//WORKING ABOVE
+
+
+.carousel-item {
+  max-height: 50rem;
+  width: 100%;
+}
+
+
+
+#logo {
+  padding-left: 1rem;
+  padding-right: 4rem;
+  font-size: 3rem;
+}
+
+footer {
+  height: 140px;
+  background-color: white;
+}
+
+.social {
+  font-size: 70px;
+  color:black;
+}
+
+#fanClub-section {
+  background: #333;
+  color: white;
+}
+
+#fanClub-section::before {
+  content:"";
+  display: block;
+  height: 100px;
+  background:  #333;
+}
+
+#eventCards::before {
+  content:"";
+  display: block;
+  height: 100px;
+  background:  white;
+}
+
+#fanClub-section .fas {
+  color: #008ed6;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
 }
