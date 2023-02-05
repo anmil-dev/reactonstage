@@ -5,7 +5,7 @@
 const HomePage = () => {
     return (
         <>
-        Hello
+        
         </>
         // <Container>
         //     <SubHeader current='Home' />
