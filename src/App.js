@@ -4,11 +4,13 @@ import TicketForm from './components/TicketForm';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import './App.css';
+import EventCarousel from './components/EventCarousel';
 
 function App() {
   return (
     <div className="App">
-      < Header /> 
+      < Header />
+      < EventCarousel /> 
       <Routes>
         <Route path='/' element={<HomePage />} />
         {/* <Route path='./components/TicketForm' element={<TicketForm />} /> */}
