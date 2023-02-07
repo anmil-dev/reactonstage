@@ -32,7 +32,8 @@ const Header = () => {
                 style={{backgroundColor: "black", color: "white"}}>
                 BUY TICKETS
             </Button>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} className='ms-2 me-5' />
+            <UserLoginForm className='ms-2 me-5' />
+                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} className='ms-5 me-2' />
                 <Collapse isOpen={menuOpen} navbar>
                     <Nav className='ms-auto p-2 flex-shrink-2 ' navbar>
                         <NavItem>
@@ -61,9 +62,7 @@ const Header = () => {
                             </NavLink>
                         </NavItem>
                     </Nav>
-                    
                 </Collapse>
-                <UserLoginForm className=' ms-2 me-5' />
         </Navbar>
         </>
     );
