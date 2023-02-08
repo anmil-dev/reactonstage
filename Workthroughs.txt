@@ -1,0 +1,4 @@
+- Carousel needs to be dynamic with (events)
+
+- Dates need of Events need to be dynamic- ERROR - react-dom.development.js:14887 Uncaught Error: 
+Objects are not valid as a React child (found: [object Date]). If you meant to render a collection of children, use an array instead.
