@@ -38,7 +38,7 @@ const Header = () => {
                     <Nav className='ms-auto p-2 flex-shrink-2 ' navbar>
                         <NavItem>
                             <NavLink className='nav-link' to=''>
-                                EVENT CALENDAR
+                                EVENTS
                             </NavLink>
                         </NavItem>
                         <NavItem>
