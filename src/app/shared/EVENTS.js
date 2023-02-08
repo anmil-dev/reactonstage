@@ -1,6 +1,6 @@
-import bwstage from '../../../public/assets/img/bwstage.jpg';
-import lightstrio from '../../../public/assets/img/lightstrio.jpg';
-import streetbandcover from '../../../public/assets/img/streetbandcover.jpg';
+import bwstage from '../assets/img/bwstage.jpg';
+import lightstrio from '../assets/img/lightstrio.jpg';
+import streetbandcover from '../assets/img/streetbandcover.jpg';
 
 export const EVENTS = [
     {

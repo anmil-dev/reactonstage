@@ -6,20 +6,25 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
+// import { EVENTS } from '../app/shared/EVENTS';
+import bwstage from '../app/assets/img/bwstage.jpg';
+import lightstrio from '../app/assets/img/lightstrio.jpg';
+import streetbandcover from '../app/assets/img/streetbandcover.jpg';
+
 
 const items = [
     {
-        src: '../assets/img/bwstage.jpg',
+        src: bwstage,
         altText: 'Slide 1',
-        caption: 'Slide 1'
+        caption: 'slide'
     },
     {
-        src: '../assets/img/lightstrio.jpg',
+        src: lightstrio,
         altText: 'Slide 2',
         caption: 'Slide 2'
     },
     {
-        src: '../assets/img/streetbandcover.jpg',
+        src: streetbandcover,
         altText: 'Slide 3',
         caption: 'Slide 3'
     }
